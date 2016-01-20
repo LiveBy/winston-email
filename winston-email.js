@@ -73,7 +73,7 @@ Email.prototype.log = function (level, msg, meta, cb) {
 
 Email.prototype.flush = function flush () {
   if (this.buffer.length) {
-    var subject = this.tags + ' ' + (this.buffer[0] || '').slice(0, 51)
+    var subject = this.tags + ' ' + (this.buffer[0] || '').slice(0, 80)
     var logs = this.buffer.slice().join('\n')
     var callbacks = this.callbacks.slice()
 
