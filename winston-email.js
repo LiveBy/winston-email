@@ -1,7 +1,8 @@
 var util = require('util')
 var winston = require('winston')
-var Transport = winston.Transport
 var nodemailer = require('nodemailer')
+var strftime = require('strftime')
+var Transport = winston.Transport
 var exception = winston.exception
 
 /**
@@ -47,7 +48,7 @@ Email.prototype.name = 'email'
 Email.prototype.log = function (level, msg, meta, cb) {
   if (this.silent) return cb(null, true)
 
-  var prefix = '[' + level + '] [' + Date() + '] '
+  var prefix = '[' + level + '] [' + strftime('%F %T', new Date()) + '] '
 
   if (msg) {
     this.buffer.push(prefix + msg)
