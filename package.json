@@ -1,11 +1,11 @@
 {
   "name": "winston-email",
-  "description": "An email transport for winston",
-  "author": "Pierre Herveou <pgherveou@gmail.com>",
-  "version": "0.0.11",
+  "description": "A fully comfigurable nodemailer email transport for Winston with buffering",
+  "author": "Benjamin Barber <ben@liveby.co>",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pgherveou/winston-email"
+    "url": "git://github.com/liveby/winston-email.git"
   },
   "keywords": [
     "logging",
@@ -13,10 +13,25 @@
     "email"
   ],
   "dependencies": {
-    "nodemailer": "1.x"
+    "nodemailer": "1.x",
+    "winston": "^2.1.1"
   },
   "peerDependencies": {
     "winston": "*"
   },
-  "main": "./lib/index.js"
+  "main": "winston-email.js",
+  "bugs": {
+    "url": "https://github.com/liveby/winston-email/issues"
+  },
+  "homepage": "https://github.com/liveby/winston-email#readme",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "xoauth2": "^1.1.0"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "license": "ISC"
 }
