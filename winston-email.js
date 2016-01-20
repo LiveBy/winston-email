@@ -87,7 +87,6 @@ Email.prototype.flush = function flush () {
     })
   }
 
-  this.subject = ''
   this.buffer.length = 0
   this.callbacks.length = 0
 }
