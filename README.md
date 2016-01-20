@@ -21,7 +21,7 @@ Add an email option to your logger, configured with to/from, and a [NodeMailer t
 
 ```javascript
 var logger = require('winston')
-var Email = require('winston-email)
+var Email = require('winston-email')
 
 logger.add(Email, {
   send: {
@@ -46,8 +46,8 @@ logger.add(Email, {
 logger.info("info msg", {title:'optional title'});
 ```
 
-Using Gmail OAuth
------------------
+Gmail OAuth
+-----------
 
 Use the [Google Developers Console] and the [OAuth2 Playground] to 
 [obtain access and refresh tokens] for the Google auth user.
