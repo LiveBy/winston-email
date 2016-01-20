@@ -1,6 +1,6 @@
 {
-  "name": "@LiveBy/winston-email",
-  "description": "A fully comfigurable nodemailer email transport for Winston with buffering",
+  "name": "winston-email",
+  "description": "A fully configurable nodemailer email transport for Winston with buffering",
   "author": "Benjamin Barber <ben@liveby.co>",
   "version": "1.0.0",
   "repository": {
