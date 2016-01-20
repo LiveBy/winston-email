@@ -46,8 +46,8 @@ logger.add(Email, {
 logger.info("info msg", {title:'optional title'});
 ```
 
-Using Gmail OAuth
------------------
+Gmail OAuth
+-----------
 
 Use the [Google Developers Console] and the [OAuth2 Playground] to 
 [obtain access and refresh tokens] for the Google auth user.
