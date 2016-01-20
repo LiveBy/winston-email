@@ -47,7 +47,7 @@ Email.prototype.name = 'email'
 Email.prototype.log = function (level, msg, meta, cb) {
   if (this.silent) return cb(null, true)
 
-  var prefix = '[' + level + '] '
+  var prefix = '[' + level + '] [' + Date() + '] '
 
   if (msg) {
     this.buffer.push(prefix + msg)
