@@ -86,6 +86,10 @@ logger.add(Email, {
 })
 ```
 
+If you are using Gmail, be sure you have 
+[enabled POP and IMAP](https://mail.google.com/mail/u/0/#settings/fwdandpop) for your
+account.
+
 #### Gmail OAuth
 
 Use the [Google Developers Console] and the [OAuth2 Playground] to 
