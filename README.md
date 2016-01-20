@@ -21,7 +21,7 @@ Add an email option to your logger, configured with to/from, and a [NodeMailer t
 
 ```javascript
 var logger = require('winston')
-var Email = require('winston-email)
+var Email = require('winston-email')
 
 logger.add(Email, {
   send: {
